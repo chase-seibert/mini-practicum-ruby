@@ -8,3 +8,6 @@ class User < ActiveRecord::Base
         return self
     end
 
+    def first_name
+        return @full_name.split(" ")[0]
+
